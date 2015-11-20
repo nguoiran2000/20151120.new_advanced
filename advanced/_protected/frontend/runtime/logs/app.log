@@ -1,0 +1,520 @@
+2015-11-20 10:45:19 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: D:\github\20151120.new_advanced\advanced\_protected/vendor\bower/jquery/dist' in D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\web\AssetManager.php:452
+Stack trace:
+#0 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(163): yii\web\AssetManager->publish('D:\\github\\20151...', Array)
+#1 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\web\AssetBundle.php(119): yii\web\View->registerAssetBundle('frontend\\assets...')
+#7 D:\github\20151120.new_advanced\advanced\_protected\frontend\views\layouts\main.php(12): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\View.php(325): require('D:\\github\\20151...')
+#9 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\github\\20151...', Array)
+#10 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->renderFile('D:\\github\\20151...', Array, Object(frontend\controllers\SiteController))
+#11 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Controller.php(372): yii\base\Controller->renderContent('<div class="sit...')
+#12 D:\github\20151120.new_advanced\advanced\_protected\frontend\controllers\SiteController.php(89): yii\base\Controller->render('index')
+#13 [internal function]: frontend\controllers\SiteController->actionIndex()
+#14 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#17 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#18 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 D:\github\20151120.new_advanced\advanced\index.php(18): yii\base\Application->run()
+#20 {main}
+2015-11-20 10:45:19 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'basic.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.8,fr-FR;q=0.6,fr;q=0.4,en-US;q=0.2,en;q=0.2'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14 Server at basic.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14'
+    'SERVER_NAME' => 'basic.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/github/20151120.new_advanced/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/github/20151120.new_advanced/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/github/20151120.new_advanced/advanced/index.php'
+    'REMOTE_PORT' => '51065'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1448012719.845
+    'REQUEST_TIME' => 1448012719
+]
+2015-11-20 10:45:20 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "favicon.ico".' in D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('favicon.ico', Array)
+#1 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\github\20151120.new_advanced\advanced\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\github\20151120.new_advanced\advanced\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-20 10:45:20 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'basic.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://basic.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.8,fr-FR;q=0.6,fr;q=0.4,en-US;q=0.2,en;q=0.2'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14 Server at basic.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14'
+    'SERVER_NAME' => 'basic.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/github/20151120.new_advanced/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/github/20151120.new_advanced/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/github/20151120.new_advanced/advanced/index.php'
+    'REMOTE_PORT' => '51066'
+    'REDIRECT_URL' => 'http://basic.com/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1448012720.43
+    'REQUEST_TIME' => 1448012720
+]
+2015-11-20 10:46:43 [127.0.0.1][-][b4nfs6u9ci5nkj7tl7mrearkc7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "favicon.ico".' in D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('favicon.ico', Array)
+#1 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\github\20151120.new_advanced\advanced\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\github\20151120.new_advanced\advanced\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-20 10:46:43 [127.0.0.1][-][b4nfs6u9ci5nkj7tl7mrearkc7][info][application] $_COOKIE = [
+    'PHPSESSID' => 'b4nfs6u9ci5nkj7tl7mrearkc7'
+    '_csrf' => '3808ad52ccf4d3cd6bfe4a41221e57f39c7b6179bac6d6e1bee75832a50c3149a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Zn6qrvBEnQlLBpcvHX3OH-aNajF-e8PG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'basic.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://basic.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.8,fr-FR;q=0.6,fr;q=0.4,en-US;q=0.2,en;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=b4nfs6u9ci5nkj7tl7mrearkc7; _csrf=3808ad52ccf4d3cd6bfe4a41221e57f39c7b6179bac6d6e1bee75832a50c3149a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Zn6qrvBEnQlLBpcvHX3OH-aNajF-e8PG%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14 Server at basic.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14'
+    'SERVER_NAME' => 'basic.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/github/20151120.new_advanced/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/github/20151120.new_advanced/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/github/20151120.new_advanced/advanced/index.php'
+    'REMOTE_PORT' => '51126'
+    'REDIRECT_URL' => 'http://basic.com/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1448012803.366
+    'REQUEST_TIME' => 1448012803
+]
+2015-11-20 11:11:05 [127.0.0.1][1][n8ak3gkl4ti4085p5ctb7sjhj5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('signup', Array)
+#8 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/signup', Array)
+#9 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 D:\github\20151120.new_advanced\advanced\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-11-20 11:11:04 [127.0.0.1][1][n8ak3gkl4ti4085p5ctb7sjhj5][info][application] $_COOKIE = [
+    '_csrf' => '6cac1f1ff2c2b53a4b89df996ec7be901326b06f7aa2251c32a873c8455e42c4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zubdMPDqka62BwZ9CyjrB_gmlNV6Ohtr\";}'
+    '_identity' => '4daf2d2db9228192dea77abf878825d6fea43256fbc078d0f1be1571ee49cbf0a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"h78R128fIsCHKO0HP3JJDeqzv-h59mBS\",2592000]\";}'
+    'PHPSESSID' => 'n8ak3gkl4ti4085p5ctb7sjhj5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'basic.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://basic.com/site/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.8,fr-FR;q=0.6,fr;q=0.4,en-US;q=0.2,en;q=0.2'
+    'HTTP_COOKIE' => '_csrf=6cac1f1ff2c2b53a4b89df996ec7be901326b06f7aa2251c32a873c8455e42c4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zubdMPDqka62BwZ9CyjrB_gmlNV6Ohtr%22%3B%7D; _identity=4daf2d2db9228192dea77abf878825d6fea43256fbc078d0f1be1571ee49cbf0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22h78R128fIsCHKO0HP3JJDeqzv-h59mBS%22%2C2592000%5D%22%3B%7D; PHPSESSID=n8ak3gkl4ti4085p5ctb7sjhj5'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14 Server at basic.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14'
+    'SERVER_NAME' => 'basic.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/github/20151120.new_advanced/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/github/20151120.new_advanced/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/github/20151120.new_advanced/advanced/index.php'
+    'REMOTE_PORT' => '51799'
+    'REDIRECT_URL' => 'http://basic.com/site/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1448014264.953
+    'REQUEST_TIME' => 1448014264
+]
+2015-11-20 11:11:49 [127.0.0.1][1][gg1ndcffpdcv325cf2qadlqb56][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('signup', Array)
+#8 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/signup', Array)
+#9 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 D:\github\20151120.new_advanced\advanced\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-11-20 11:11:49 [127.0.0.1][1][gg1ndcffpdcv325cf2qadlqb56][info][application] $_COOKIE = [
+    '_csrf' => 'c1c85ef5f531aae02d63c02b139b1d91868431adc73e6221a809ae504b93fae3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"d_OKI9IQ4cYekDPh4KYhT7dUzg4KQs8L\";}'
+    'PHPSESSID' => 'gg1ndcffpdcv325cf2qadlqb56'
+    '_identity' => '4daf2d2db9228192dea77abf878825d6fea43256fbc078d0f1be1571ee49cbf0a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"h78R128fIsCHKO0HP3JJDeqzv-h59mBS\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/user/view?id=2'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'basic.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://basic.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.8,fr-FR;q=0.6,fr;q=0.4,en-US;q=0.2,en;q=0.2'
+    'HTTP_COOKIE' => '_csrf=c1c85ef5f531aae02d63c02b139b1d91868431adc73e6221a809ae504b93fae3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22d_OKI9IQ4cYekDPh4KYhT7dUzg4KQs8L%22%3B%7D; PHPSESSID=gg1ndcffpdcv325cf2qadlqb56; _identity=4daf2d2db9228192dea77abf878825d6fea43256fbc078d0f1be1571ee49cbf0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22h78R128fIsCHKO0HP3JJDeqzv-h59mBS%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14 Server at basic.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14'
+    'SERVER_NAME' => 'basic.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/github/20151120.new_advanced/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/github/20151120.new_advanced/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/github/20151120.new_advanced/advanced/index.php'
+    'REMOTE_PORT' => '51829'
+    'REDIRECT_URL' => 'http://basic.com/site/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1448014309.186
+    'REQUEST_TIME' => 1448014309
+]
+2015-11-20 11:12:56 [127.0.0.1][1][sb58vai4pt9dq0510g21lak6t7][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('signup', Array)
+#8 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/signup', Array)
+#9 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 D:\github\20151120.new_advanced\advanced\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-11-20 11:12:56 [127.0.0.1][1][sb58vai4pt9dq0510g21lak6t7][info][application] $_COOKIE = [
+    '_csrf' => '51087948ad54cdc56c755e3864078011025300b32d9f4e742981c9b58f20367ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ax2ORX-Gl2oIFkRyHk-SpCSdUqoAspy-\";}'
+    'PHPSESSID' => 'sb58vai4pt9dq0510g21lak6t7'
+    '_identity' => '4daf2d2db9228192dea77abf878825d6fea43256fbc078d0f1be1571ee49cbf0a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"h78R128fIsCHKO0HP3JJDeqzv-h59mBS\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/user/index'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'basic.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://basic.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.8,fr-FR;q=0.6,fr;q=0.4,en-US;q=0.2,en;q=0.2'
+    'HTTP_COOKIE' => '_csrf=51087948ad54cdc56c755e3864078011025300b32d9f4e742981c9b58f20367ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ax2ORX-Gl2oIFkRyHk-SpCSdUqoAspy-%22%3B%7D; PHPSESSID=sb58vai4pt9dq0510g21lak6t7; _identity=4daf2d2db9228192dea77abf878825d6fea43256fbc078d0f1be1571ee49cbf0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22h78R128fIsCHKO0HP3JJDeqzv-h59mBS%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14 Server at basic.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14'
+    'SERVER_NAME' => 'basic.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/github/20151120.new_advanced/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/github/20151120.new_advanced/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/github/20151120.new_advanced/advanced/index.php'
+    'REMOTE_PORT' => '51855'
+    'REDIRECT_URL' => 'http://basic.com/site/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1448014376.184
+    'REQUEST_TIME' => 1448014376
+]
+2015-11-20 11:18:56 [127.0.0.1][2][h6h071imbca6i8nrmh3r881bg7][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'You are not allowed to access this page.' in D:\github\20151120.new_advanced\advanced\_protected\frontend\controllers\ArticleController.php:108
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->actionUpdate('1')
+#1 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#2 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#3 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('update', Array)
+#4 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('article/update', Array)
+#5 D:\github\20151120.new_advanced\advanced\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\github\20151120.new_advanced\advanced\index.php(18): yii\base\Application->run()
+#7 {main}
+2015-11-20 11:18:56 [127.0.0.1][2][h6h071imbca6i8nrmh3r881bg7][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd99767b47c6a0e91a1a1c0190f32a7e05e41047dfbfcc5a82d08623073fe1aa0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fzbc6RwCnBiGZUX4lCP7eB8og5CEzlEm\";}'
+    'PHPSESSID' => 'h6h071imbca6i8nrmh3r881bg7'
+    '_identity' => '775c0b58155a5d6b6b2e1d0c8c3ffb7be5c1915ed9873f0111c0e8c4cf2de3c0a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"BoF0Bo6zq66DxX4XELTOw29ViPfwyTVg\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'basic.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://basic.com/article/admin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.8,fr-FR;q=0.6,fr;q=0.4,en-US;q=0.2,en;q=0.2'
+    'HTTP_COOKIE' => '_csrf=d99767b47c6a0e91a1a1c0190f32a7e05e41047dfbfcc5a82d08623073fe1aa0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fzbc6RwCnBiGZUX4lCP7eB8og5CEzlEm%22%3B%7D; PHPSESSID=h6h071imbca6i8nrmh3r881bg7; _identity=775c0b58155a5d6b6b2e1d0c8c3ffb7be5c1915ed9873f0111c0e8c4cf2de3c0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22BoF0Bo6zq66DxX4XELTOw29ViPfwyTVg%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14 Server at basic.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.14'
+    'SERVER_NAME' => 'basic.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/github/20151120.new_advanced/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/github/20151120.new_advanced/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/github/20151120.new_advanced/advanced/index.php'
+    'REMOTE_PORT' => '52088'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => 'http://basic.com/article/update?id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/article/update?id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1448014736.285
+    'REQUEST_TIME' => 1448014736
+]
